@@ -11,7 +11,9 @@ const int backward_trig_pin = 10;
 const int backward_echo_pin = 13;
 
 
+//측정 거리를 long형태로 반환하는 함수들
 
+//정면센서 측정거리 반환
 long forward_sensor(){
   digitalWrite(forward_trig_pin, LOW);  
   delayMicroseconds(2); 
@@ -32,6 +34,7 @@ long forward_sensor(){
   delay(100);
 }
 
+//측면센서1 측정거리 반환
 long side1_sensor(){
   digitalWrite(side_trig_pin1, LOW);  
   delayMicroseconds(2); 
@@ -54,6 +57,7 @@ long side1_sensor(){
   delay(100);
 }
 
+//측면센서2 측정거리 반환
 long side2_sensor(){
   digitalWrite(side_trig_pin2, LOW);  
   delayMicroseconds(2); 
@@ -75,6 +79,7 @@ long side2_sensor(){
   delay(100);
 }
 
+//후면센서 측정거리 반환
 long backward_sensor(){
   digitalWrite(backward_trig_pin, LOW);  
   delayMicroseconds(2); 

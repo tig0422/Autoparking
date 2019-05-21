@@ -1,4 +1,4 @@
-// 왼쪽 바퀴 - 전후진
+﻿// 왼쪽 바퀴 - 전후진
 const int DIRA = 4;                   // Motor A Direction (A 회전방향)
 const int PWMA = 5;                  // Motor A PWM (A 속도)
 
@@ -20,8 +20,8 @@ void go_forward(int l, int r) {
   
   
 }
-//ex) go_forward(100,100,2000) 이면 2초 전진.
-//ex) go_forward(80,200,2000) 이면 2초 좌회전.
+//ex) go_forward(100,100) 이면 전진.
+//ex) go_forward(80,200) 이면 좌회전.
 
 void go_backward(int l, int r) {
   // 전진
@@ -35,7 +35,8 @@ void go_backward(int l, int r) {
    
   
 }
-//ex) go_backward(100,100,2000) 이면 2초 후진.
+//ex) go_backward(100,100) 이면 후진.
+//ex) go_backward(80,200)이면 뒤로 좌회전
 
 
 void stop(int t){
